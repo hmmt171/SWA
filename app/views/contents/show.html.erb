@@ -1,0 +1,55 @@
+<div class="aritcle_eyecatch" style="background-image:url(<%= @content.image_urls %>);">
+    <h2 class="article_eyecatch_title"><%= @content.title %></h2>
+  </div>
+  <div id="wrapper" class="clearfix">
+    <div class="article_list">
+      <div class="article_row">
+        <h3 class="view_headline"><%= @content.text_headline %></h3>
+          <p class="article_text"><%= @content.text%></p>
+      </div>
+    </div>
+    <div class="article_sidebar">
+      <div class="article_ranking">
+        <h5 class="ranking_h5">アクセスランキング</h5>
+          <% @ranking.each.with_index(1) do |content, i| %>
+          <div class="ranking_list clearfix">
+          <a href="/contents/<%= content.id %>">
+            <div class="ranking_image" style="background-image:url('<%= content.image_urls %>')">
+              <div class="ranking_number">
+                <%= i %>
+              </div>
+            </div>
+          </a>
+          <div class="ranking_title">
+            <a href="/contents/<%= content.id %>">
+             <%= content.title %>
+            </a>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <div class="article_recommended">
+        <h5 class="article_recommended_title">オススメ記事</h5>
+          <% @recommended.each do |recommend| %>
+          <div class="article_recommended_list clearfix">
+            <div class="article_recommended_image" style="background-image:url('<%= recommend.image_urls %>')" >
+              <a href="/contents/<%= recommend.id %>"></a>
+            </div>
+            <div class="article_recommended_text">
+              <a href="/contents/<%= recommend.id %>">
+               <%= recommend.title %>
+              </a>
+            </div>
+          </div>
+          <% end %>
+      </div>
+      <div class="article_popular_tag">
+        <h4>人気のタグが表示されます</h4>
+      </div>
+      <div class="article_ad">
+        <h4>広告</h4>
+      </div>
+      <div class="fb-page" data-href="https://www.facebook.com/STORY-1548362218749541/?fref=ts" data-tabs="timeline" data-height="210" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+      </div>
+    </div>
+  </div>

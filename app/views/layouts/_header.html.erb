@@ -1,0 +1,31 @@
+<header>
+  <div class="header_inner clearfix">
+    <%= form_tag search_contents_path, :method => 'get', :class => 'inner_search' do %>
+       <input name="keyword" placeholder="作品名で検索" type="text" value=""></input>
+       <%= submit_tag "検索"%>
+    <% end %>
+    <%= link_to image_tag("story.png", { :border => '0', :alt => 'home' }), new_user_session_path, class: 'header_icon' %>
+    <% if user_signed_in? %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav_logout" %>
+    <% else %>
+    <div class="nav_register">
+    <%= link_to "ログイン", new_user_session_path %>
+    <%= link_to "新規登録", new_user_registration_path %>
+    </div>
+    <% end %>
+    <%= link_to "まとめをつくる", "/contents/new", class: 'make_contents' %>
+    <h1 class="header_icon">
+    </h1>
+  </div>
+  <div class="header_bottom">
+    <ul class="header_ul">
+      <li>interview</li>
+      <li>event</li>
+      <li>job</li>
+      <li>internship</li>
+      <li>study</li>
+      <li>overseas</li>
+      <li>TED</li>
+    </ul>
+  </div>
+</header>

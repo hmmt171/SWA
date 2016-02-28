@@ -1,0 +1,346 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.inner_search{
+  float: left;
+  padding-top: 30px;
+  padding-left: 10.546875%;
+}
+
+.header_inner{
+  background-color: #CCFFFF;
+  width: 100%;
+  height: 72px;
+  position: relative;
+}
+
+.header_bottom{
+  width: 100%;
+  height: 45px;
+  background-color: #CCFFFF;
+  opacity: 0.4;
+}
+
+.header_ul{
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 83%;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.header_ul li{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.top_search{
+  margin-left: 10.546875%;
+  padding-top: 30px;
+  position: absolute;
+}
+
+.header_icon{
+  margin-left: 19.75%;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.nav_logout{
+  float: right;
+  margin-top: 30px;
+  padding-right: 150px;
+
+}
+
+.login{
+  float: right;
+  margin-top: 30px;
+}
+
+.nav_register{
+  float: right;
+  margin-top: 30px;
+  padding-right: 150px;
+
+}
+
+.make_contents{
+  float: right;
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+#eyecatch{
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 369px;
+}
+
+.eyecatch_in{
+  margin: 0 auto;
+  width: 80%;
+  height: 339px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #EEEEEE;
+}
+
+.eyecatch_main{
+  float: left;
+  padding: 15px;
+  width: 68%;
+  height: 337px;
+  border: 1px solid #e7e7e7;
+  background-color: white;
+}
+
+.eyecatch_content{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.eyecatch_image{
+  background-size: 100% 100%;
+  height: 70%;
+  width: 100%;
+}
+
+.eyecatch_title{
+  height: 30%;
+  width: 90%;
+  margin-left: 4px;
+  font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-size: 14px;
+}
+
+
+.eyecatch_ad{
+  float: right;
+  width: 28%;
+  height: 337px;
+  border: 1px solid #eee;
+  background-color: white;
+  margin-right: 22px;
+}
+
+.title_section_in{
+  width: 100%;
+  height: 37px;
+  border-bottom: 1px dotted #eee;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.title_section_in h2{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.title_section_in p{
+  margin-top: 5px;
+  color: #999;
+  font-size: 11px;
+  margin: 0 auto;
+}
+
+.eyecatch_feature_wrapp{
+  width: 100%;
+  height: 83px;
+  border-bottom: 1px dotted #eee;
+  padding-left: 13px;
+  padding-right: 10px;
+}
+
+.eyecatch_feature_link{
+  width: 100%;
+  height: 18px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+}
+
+#wrapper{
+  background-color: #D0B0FF;
+  margin: 0 auto;
+  width: 80%;
+  height: 1980px;
+  overflow: hidden;
+}
+
+
+.article_list{
+  float: left;
+  width: 69.8%;
+  height: 1800px;
+  padding-right: 1%;
+  padding-left: 4px;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
+  background-color: white;
+}
+
+.article_list_header{
+  width: 100%;
+  height: 37px;
+  margin-top: 10px;
+}
+
+.article_list_header h4{
+   float: left;
+   margin: 0 0 0 30px;
+   font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+   font-size: 20px;
+}
+
+.article_list_header p{
+   float: right;
+   margin: 0 20px 0 0;
+   font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+   font-size: 14px;
+}
+
+.article_list_box{
+  height: 358px;
+  background-color: #fff;
+  width: 32.4%;
+  float: left;
+  margin: 0 4px 4px 0;
+  border: 1px solid #F5F5F5;
+  cursor: pointer;
+  box-shadow: 0 0 1px;
+}
+
+.article_list_content{
+  cursor: pointer;
+  height: 342px;
+  width: 93%;
+  margin: 8px;
+  background-color: #EEFFFF;
+}
+
+.article_list_thumb{
+  width: 100%;
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.article_list_text{
+  width: 100%;
+  height: 78px;
+  line-height: 1.5;
+  font-size: 12px;
+  font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.article_sidebar{
+  float: right;
+  width: 30%;
+  height: 1800px;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
+  background-color: white;
+}
+
+.article_ranking{
+  width: 93%;
+  height: 400px;
+  padding: 10px;
+  background-color: #FFEEFF;
+}
+
+.article_recommended{
+  width: 93%;
+  height: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #FFEEFF;
+}
+
+.article_recommended_title{
+  font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 10px 0;
+}
+
+.article_recommended_list.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #BBBBBB;
+}
+
+.article_recommended_image{
+  float: left;
+  width: 25%;
+  height: 60px;
+  margin-right: 4px;
+  background-size: 100% 100%;
+}
+
+.article_recommended_text{
+  width: 95%;
+  font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-size: 10px;
+}
+
+.article_popular_tag{
+  width: 93%;
+  height: 160px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #FFEEFF;
+  .tag_name{
+    border-radius: 4px;
+    border: 2px solid #BAD3FF;
+    background-color: white;
+    width: auto;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}
+
+
+
+.article_ad{
+  width: 93%;
+  height: 160px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #FF97C2;
+}
+
+.fb-page{
+  margin-top: 10px;
+  width: 93.2%;
+}
+
+.footer{
+  background-color: #808080;
+  width: 100%;
+  height: 200px;
+}
+
+.footer_c{
+  margin: 0;
+}
+
+.pagination{
+  text-align: center;
+}
+
+.index_paginate{
+  text-align: center;
+  margin: 20px 0;
+}

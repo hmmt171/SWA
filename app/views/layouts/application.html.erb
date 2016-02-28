@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>SWA</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <body>
+      <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '461341907390004',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+        };
+
+        (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div id="fb-root"></div>
+      <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <script>
+      $(document).on('ready page:load', function() {
+      return $('#article-tags').tagit();
+      });
+      </script>
+
+
+      <%= render partial: 'layouts/header' %>
+
+      <!-- <p><%= notice %></p>
+      <p><%= alert %></p> -->
+
+      <%= yield %>
+
+      <footer class='footer'>
+        <p class="footer_c">(C) STORY 2016</p>
+      </footer>
+  </body>
+</html>

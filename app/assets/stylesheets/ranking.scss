@@ -1,0 +1,40 @@
+.ranking_list.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #BBBBBB;
+}
+
+.ranking_h5{
+  font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 6px 0;
+}
+
+.ranking_image{
+  float: left;
+  width: 25%;
+  height: 60px;
+  margin-right: 4px;
+  background-size: 100% 100%;
+}
+
+a{text-decoration: none;
+  .ranking_number{
+    width: 14px;
+    height: auto;
+    background-color: #FFFFCC;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  }
+}
+.ranking_title{
+  width: 98%;
+  font-family: Avenir , "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Meryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-size: 10px;
+  a{
+    text-decoration: none;
+  }
+}

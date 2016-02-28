@@ -1,0 +1,13 @@
+<div class="edit_area">
+  <%= form_for @content do |f| %>
+    <%= f.select :category, {"インタビュー" => "interview", "イベント" => "event", "就活" => "syukatsu", "インターンシップ" => "internship", "留学" => "ryugaku", "海外" => "foreign", "TED" => "TED"}%>
+    <%= f.file_field :image_urls %>
+    <div class="field">
+    <%= f.label :tag_list, "タグ（カンマ区切り）" %><br>
+    <%= text_field_tag 'content[tag_list]', @content.tag_list.join(','), :id => "article-tags" %>
+    </div>
+    <%= f.text_field :title, placeholder:"タイトル", class: "edit_title" %>
+    <%= f.text_area :text, placeholder:"内容", class: "edit_contents"%>
+    <%= f.submit '公開する'%>
+  <% end %>
+</div>

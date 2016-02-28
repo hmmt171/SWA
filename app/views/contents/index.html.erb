@@ -1,0 +1,97 @@
+<section id="eyecatch">
+  <div class="eyecatch_in">
+    <div class="eyecatch_main">
+      <% @eyecatchs.each do |e|%>
+      <div class="eyecatch_content">
+        <a href="/contents/<%= e.id %>">
+          <div class="eyecatch_image" style="background-image:url(<%= e.image_urls %>)">
+          </div>
+        </a>
+        <a href="/contents/<%= e.id %>">
+          <div class="eyecatch_title">
+            <%= e.title %>
+          </div>
+        </a>
+      </div>
+      <% end %>
+    </div>
+    <div class="eyecatch_ad">
+    </div>
+  </div>
+</section>
+
+<div id="wrapper" class="clearfix">
+  <div class="article_list">
+      <div class="article_list_header clearfix">
+        <h4>2月11日の新着記事</h4>
+        <p>今日の新着情報</p>
+      </div>
+      <div class="clearfix">
+        <% @contents.each do |content|%>
+          <div class="article_list_box">
+            <div class="article_list_content">
+              <a href="/contents/<%= content.id %>">
+                <div class="article_list_thumb" style="background-image:url('<%= content.image_urls %>')"></div>
+              </a>
+              <a href="/contents/<%= content.id %>">
+                <div class="article_list_text">
+                  <p><%= content.title %></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="index_paginate">
+        <%= paginate(@contents)%>
+      </div>    
+  </div>
+  <div class="article_sidebar">
+    <div class="article_ranking">
+      <h5 class="ranking_h5">アクセスランキング</h5>
+        <% @ranking.each.with_index(1) do |content, i| %>
+        <div class="ranking_list clearfix">
+        <a href="/contents/<%= content.id %>">
+          <div class="ranking_image" style="background-image:url('<%= content.image_urls %>')">
+            <div class="ranking_number">
+              <%= i %>
+            </div>
+          </div>
+        </a>
+        <div class="ranking_title">
+          <a href="/contents/<%= content.id %>">
+           <%= content.title %>
+          </a>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="article_recommended">
+      <h5 class="article_recommended_title">オススメ記事</h5>
+        <% @recommended.each do |recommend| %>
+        <div class="article_recommended_list clearfix">
+          <div class="article_recommended_image" style="background-image:url('<%= recommend.image_urls %>')" >
+            <a href="/contents/<%= recommend.id %>"></a>
+          </div>
+          <div class="article_recommended_text">
+            <a href="/contents/<%= recommend.id %>">
+             <%= recommend.title %>
+            </a>
+          </div>
+        </div>
+        <% end %>
+    </div>
+    <div class="article_popular_tag">
+      <% @tags.each do |tag| %>
+        <div class="tag_name">
+          #<%= tag.name %>
+        </div>
+      <% end %>
+    </div>
+    <div class="article_ad">
+      <h4>広告</h4>
+    </div>
+    <div class="fb-page" data-href="https://www.facebook.com/STORY-1548362218749541/?fref=ts" data-tabs="timeline" data-height="210" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+    </div>
+  </div>
+</div>

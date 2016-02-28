@@ -1,0 +1,25 @@
+<div class="devise_wrapper">
+  <div class="devise_form">
+    <div class="divise_form_main">
+      <p class="devise_title">ログイン</p>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.email_field :email, placeholder: "メールアドレス", autofocus: true, class: "devise_email" %>
+        </div>
+
+        <div class="field">
+          <%= f.password_field :password, placeholder: "パスワード", autocomplete: "off", class: "devise_password" %>
+        </div>
+
+        <div class="field">
+          <%= f.submit "ログイン", class: "devise_submit" %>
+        </div>
+      <% end %>
+      <p class="add_or">- or -</p>
+      <div class="FB_login">
+        <%= link_to "facebookでログイン", user_omniauth_authorize_path(:facebook) %>
+      </div>
+      <%= render "users/shared/links" %>
+    </div>
+  </div>
+</div>
