@@ -38,8 +38,5 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  #
-  Devise.setup do |config|
-   config.omniauth :facebook, '461341907390004', '5f9e0ff066b4da5b5354e5c1c4b8a721', :scope => 'email,user_birthday', :display => 'popup'
-  end
+  
 end
