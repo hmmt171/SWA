@@ -1,5 +1,5 @@
 <header>
-  <div class="header_inner clearfix">
+  <div class="header_inner clearfi">
     <%= form_tag search_contents_path, :method => 'get', :class => 'inner_search' do %>
        <input name="keyword" placeholder="作品名で検索" type="text" value=""></input>
        <%= submit_tag "検索"%>
@@ -14,8 +14,8 @@
     </div>
     <% end %>
     <%= link_to "まとめをつくる", "/contents/new", class: 'make_contents' %>
-    <h1 class="header_icon">
-    </h1>
+    <div class="header_icon">
+    </div>
   </div>
   <div class="header_bottom">
     <ul class="header_ul">

@@ -5,8 +5,8 @@ class ContentsController < RankingController
   def index
     @eyecatchs = Content.where('eyecatch_content = true').limit(2)
     @recommended = Content.where('is_recommened = true').limit(5)
-    @contents = Content.order('id DESC').page(params[:page]).per(15)
-    @tags = Content.tag_counts_on(:tags).order('count DESC')
+    @contents = Content.order('id ASC').page(params[:page]).per(15)
+    @tags = Content.tag_counts_on(:tags).order('count DESC').limit(16)
   end
 
   def show
